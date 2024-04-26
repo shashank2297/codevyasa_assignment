@@ -30,7 +30,7 @@
     font-size: 25px;
     color: white;
     align-content: center;
-    margin-bottom: 250px;
+    margin-bottom: 350px;
 
     span {
       padding: 15px;
@@ -45,32 +45,31 @@
 .productshdr-1 {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 15px;
 
   h1 {
     font-size: 35px;
     margin: 0;
-    padding-top: 5px;
+    padding-top: 9px;
     color: rgb(211, 123, 8);
   }
 }
 
 .productshdr-2 {
   display: flex;
-  margin-right: 20px;
   font-size: 24px;
   padding: 5px;
 
   .bell {
     margin-right: 10px;
-    padding: 12px;
+    padding: 14px;
     position: relative;
   }
 }
 
 .productshdr-3 {
   border: 1px solid white;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,13 +80,15 @@
     padding: 5px;
   }
 
-  .person {
-    font-size: 30px;
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 
   .name {
     position: relative;
-    bottom: 4px;
+    bottom: 3px;
   }
 
 }
@@ -97,7 +98,7 @@
   font-size: 80px;
   bottom: 26px;
   color: orange;
-  right: 6px;
+  right: 8px;
 }
 
 /* Products Header ends here */
@@ -144,7 +145,7 @@
 #search,
 .btns {
   margin: 0;
-  padding: 0;
+  padding-bottom: 5px;
 }
 
 /* Search Bar */
@@ -157,7 +158,7 @@
 
 .searchbar-1 input {
   width: 300px;
-  height: 25px;
+  height: 30px;
   font-size: 20px;
   padding: 5px;
   border: 1px solid silver;
@@ -172,7 +173,7 @@
 #searchicon {
   position: absolute;
   left: 10px;
-  top: 7px;
+  top: 9px;
 }
 
 /* Buttons */
@@ -182,7 +183,7 @@
 
 .btn {
   width: 150px;
-  height: 35px;
+  height: 40px;
   border: none;
   font-size: 16px;
   border-radius: 5px;
@@ -246,6 +247,10 @@ thead {
   background-color: lightgrey;
 }
 
+th {
+  padding: 10px;
+}
+
 td {
   padding: 5px;
 }
@@ -270,8 +275,9 @@ td {
   margin: 25px 10px 0 0;
 
   input::placeholder {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 12px;
+    font-weight: bold;
   }
 
   input,
@@ -292,6 +298,8 @@ td {
 
 .close {
   cursor: pointer;
+  font-size: 20px;
+  padding: 2px;
 }
 
 .appandreset {
@@ -304,7 +312,7 @@ td {
 
 .apply {
   background-color: rgb(211, 123, 8);
-  margin-top: 50px;
+  margin-top: 80px;
 
 }
 
