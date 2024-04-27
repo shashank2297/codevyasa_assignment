@@ -6,6 +6,7 @@ import { BsGraphDownArrow } from "react-icons/bs";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 
 function Sidebar() {
+    
     return (
         <section className="sidebar">
             <p>logo</p>

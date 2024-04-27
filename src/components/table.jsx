@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import data from "../data"
+import Pagination from "./pagination"
+import { CgArrowsScrollV } from "react-icons/cg";
 
 function Table() {
 
@@ -46,13 +48,13 @@ function Table() {
                 <thead>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <th>Sr. No.</th>
-                        <th>Heading 1</th>
-                        <th>Heading 2</th>
-                        <th>Heading 3</th>
-                        <th>Heading 4</th>
-                        <th>Heading 5</th>
-                        <th>Heading 6</th>
+                        <th>Sr. No. <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 1 <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 2 <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 3 <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 4 <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 5 <span><CgArrowsScrollV /></span></th>
+                        <th>Heading 6 <span><CgArrowsScrollV /></span></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,21 +72,13 @@ function Table() {
                     ))}
                 </tbody>
             </table>
-            <div>
-                <ul className="pagination">
-                    <li className="page-item">
-                        <a href="#" className="page-link" onClick={prevpage}>&laquo;</a>
-                    </li>
-                    {numbers.map((n) => (
-                        <li key={n} className={`page-item ${currpage === n ? 'active' : ''}`}>
-                            <a href="#" className="page-link" onClick={() => changecpage(n)}>{n}</a>
-                        </li>
-                    ))}
-                    <li className="page-item">
-                        <a href="#" className="page-link" onClick={nexpage}>&raquo;</a>
-                    </li>
-                </ul>
-            </div>
+            <Pagination
+                currpage={currpage}
+                prevpage={prevpage}
+                nexpage={nexpage}
+                changecpage={changecpage}
+                numbers={numbers}
+            />
         </div>
     )
 }

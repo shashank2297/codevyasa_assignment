@@ -1,6 +1,7 @@
 import React from "react"
 
 function Filters({ toggleFilters }) {
+
     return (
         <section className="filters" id="filters-1">
             <div className="filterssec">

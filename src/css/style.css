@@ -220,8 +220,9 @@
 .page-link {
   cursor: pointer;
   padding: 5px 10px;
-  color: #333;
-  text-decoration: none;
+  border: none;
+  font-size: small;
+  background-color: whitesmoke;
 }
 
 .page-link:hover {
@@ -249,6 +250,12 @@ thead {
 
 th {
   padding: 10px;
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 12px;
+  }
 }
 
 td {
